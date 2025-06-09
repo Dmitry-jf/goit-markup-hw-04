@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 
@@ -59,7 +60,12 @@ border-bottom: 1px solid #e7e9fc;
     display: flex;
     align-items: center;
     gap: 40px;
+
 }
+
+
+
+
 
 .info {
     display: flex;
@@ -76,15 +82,32 @@ border-bottom: 1px solid #e7e9fc;
 .nav-link {
     display: block;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.current {
+    position: relative;
+}
+
+.nav-link.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #404bbf;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
 
 .contacts {
     margin-left: auto;
 }
 
-.main-page {
+.contacts-link {
     display: block;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav > a, .bottom-section a {
@@ -109,10 +132,13 @@ border-bottom: 1px solid #e7e9fc;
                 letter-spacing: 0.02em;          
     }
 
-        .main-page:hover, .main-page:focus {
+        .contacts-link:hover, 
+        .contacts-link:focus,
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.current {
             color: #404bbf;
-
-        }
+}
 
     .info a {
         color: #434455;
@@ -136,7 +162,18 @@ border-bottom: 1px solid #e7e9fc;
  .title {
     background-color: #2E2F42;
     padding: 188px 0;
+    background-image:  
+    linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
  }
+
     h1 {
         font-weight: 700;
             font-size: 56px;
@@ -182,6 +219,7 @@ border-bottom: 1px solid #e7e9fc;
     justify-content: center;
     /* margin: 120px 0; */
     gap: 24px;
+    position: relative;
 }
 
 .item-strategy {
@@ -190,19 +228,34 @@ border-bottom: 1px solid #e7e9fc;
 
 }
 
-         .visually-hidden {
-             position: absolute;
-             width: 1px;
-             height: 1px;
-             margin: -1px;
-             border: 0;
-             padding: 0;
-             white-space: nowrap;
-             clip-path: inset(100%);
-             clip: rect(0 0 0 0);
-             overflow: hidden;  
-             visibility: hidden;
-    }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+.description-icons {
+    border: 1px solid #8e8f99;
+        border-radius: 4px;
+        /* width: 264px; */
+        height: 112px;
+        background: #f4f4fd;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+
+}
+
 
      .description h3 {
         font-weight: 500;
