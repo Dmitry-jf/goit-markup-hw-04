@@ -483,7 +483,7 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
             transform: translate(0);
             
  }
-        .app-portfolio:hover .description-wrap {
+        .app-portfolio:hover {
              box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08); 
@@ -493,7 +493,23 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 /* Footer */
 
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
 
+.left-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+
+}
 
         .bottom-section {
                     background-color: #2E2F42;
@@ -528,26 +544,16 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
             flex-direction: row;
             gap: 16px;
             max-width: 232px;
-            height: 40px;
             margin: 0;
  }
 
- 
-    .footer-wrap {
-        display: flex;
-        flex-direction: row;
+ .footer-icons-li {
+        height: 40px;
+        width: 40px;
+
  }
 
-    .left-column {
-        display: flex;
-        flex-direction: column;
-}
-    .right-column {
-        display: flex;
-        flex-direction: column;
-        margin-left: 120px;
 
-}
 
     .social-media {
        font-family: "Roboto",
