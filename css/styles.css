@@ -558,10 +558,14 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     .social-media {
        font-family: "Roboto",
        sans-serif;
-       font-weight: 500;
        font-size: 16px;
        line-height: 1.5;
        letter-spacing: 0.02em;
-       color: #fff;
-      margin-bottom: 16px;
+       margin-bottom: 16px;
+       font-weight: 500;
+       color: #FFFFFF;
+}
+
+.link-footer:hover, .link-footer:focus {
+    background-color: #31d0aa;
 }
