@@ -278,15 +278,7 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
  /* Section-3 (section team)*/
 
- .icons-wrap {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 24px;
-    margin-top: 8px;
-    max-width: 232px; */
-} 
+
 
 .icons-list {
     display: flex;
@@ -556,8 +548,6 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 
     .social-media {
-       font-family: "Roboto",
-       sans-serif;
        font-size: 16px;
        line-height: 1.5;
        letter-spacing: 0.02em;
